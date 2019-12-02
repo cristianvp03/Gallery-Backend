@@ -1,0 +1,26 @@
+{
+  "name": "photogallery",
+  "version": "1.0.0",
+  "description": "PhotoGallery, Project to upload and organize your photos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "photogallery",
+    "condorlabs"
+  ],
+  "author": "Cristian Vasquez Palomino",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.7.13",
+    "nodemon": "^2.0.1",
+    "save": "^2.4.0"
+  }
+}
