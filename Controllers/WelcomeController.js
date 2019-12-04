@@ -4,7 +4,7 @@ const responseFormat = require('../Utils/ResponseFormat');
 
 let welcomeController = {
 
-    home: (req, res) => res.send(responseFormat.responseFormat(200, "Api is running", {})),
+    home: (req, res) => res.send(responseFormat.responseFormat("Api is running", {})),
 
 };
 

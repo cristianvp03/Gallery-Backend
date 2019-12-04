@@ -11,11 +11,13 @@ route.post('/User/singUp',userController.signUp);
 route.post('/User/logIn',userController.logIn);
 route.post('/User/getUser',userController.getUserByID)
 
+//Photo
 route.get('/Photo',photoController.Get);
 route.get('/Photo/GetFilters',photoController.GetFilter);
 route.post('/Photo',photoController.Post);
 route.delete('/Photo',photoController.Delete)
 
+//Welcome
 route.get('/',welcomeController.home);
 
 

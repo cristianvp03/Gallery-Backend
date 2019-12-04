@@ -15,9 +15,9 @@ let PhotoController = {
 
         photoModel.find({user_id:mongoose.Types.ObjectId(req.query.userid)})
         .then(data => {
-            res.send(responseFormat.responseFormat(200, "Photo", data));
+            res.send(responseFormat.responseFormat("Photo", data));
         }).catch(err => {
-            res.status(400).send(responseFormat.responseFormat(400, "Photo", [err.message]));
+            res.status(400).send(responseFormat.responseFormat("Photo", [err.message]));
         });
     },
     Post: (req,res) => {        
@@ -41,7 +41,7 @@ let PhotoController = {
         }
         
         if(statusProcess){
-            res.send(responseFormat.responseFormat(200, "Photo", [responseFormat.saveSuccess("Photo")]));
+            res.send(responseFormat.responseFormat("Photo", [responseFormat.saveSuccess("Photo")]));
         }else{
             res.send(responseFormat.errorOccurred());
         }           
@@ -68,9 +68,9 @@ let PhotoController = {
             user_id:mongoose.Types.ObjectId(req.query.userid)
         })
         .then(data => {
-            res.send(responseFormat.responseFormat(200, "Photo", data));
+            res.send(responseFormat.responseFormat("Photo", data));
         }).catch(err => {
-            res.status(400).send(responseFormat.responseFormat(400, "Photo", [err.message]));
+            res.status(400).send(responseFormat.responseFormat("Photo", [err.message]));
         });
     }
 
